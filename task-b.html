@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI & UX Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      .img-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .img-container img:hover {
+        cursor: none;
+      }
+      .custom-cursor {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: #ccc;
+        border-radius: 50%;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+      }
+      .img-container img:hover ~ .custom-cursor {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="lg:py-34 lg:px-28 md:py-20 md:px-15 py-10 px-5">
+      <!-- service section -->
+
+      <section class="flex justify-between gap-10 flex-wrap">
+        <div class="max-w-[625px]">
+          <p
+            class="lg:text-[36px] md:text-[28px] sm:text-[24px] lg:leading-13 md:leading-10"
+          >
+            Experience our expert solutions tailored to enhance your business
+            with top-tier design, development, and animation.
+          </p>
+          <button class="bg-blue-700 text-white py-1.5 px-4 rounded-full mt-10">
+            Services
+          </button>
+        </div>
+        <div
+          class="flex flex-col font-semibold lg:text-[52px] md:text-[36px] text-[24px] gap-4"
+        >
+          <div>UI & UX</div>
+          <div>Development</div>
+          <div>Blockchain</div>
+        </div>
+      </section>
+      <section class="img-container md:mt-30 mt-10 scrollbar-thin">
+        <div
+          id="track"
+          class="flex gap-4 items-center overflow-x-auto pb-10 scrollbar-thin"
+        >
+          <img
+            height="142.5"
+            width="800"
+            class="rounded-xl"
+            src="./img/1.png"
+            alt="Image 1"
+          />
+          <img
+            height="142.5"
+            width="800"
+            class="rounded-xl"
+            src="./img/1.png"
+            alt="Image 2"
+          />
+          <img
+            height="142.5"
+            width="800"
+            class="rounded-xl"
+            src="./img/1.png"
+            alt="Image 3"
+          />
+          <img
+            height="142.5"
+            width="800"
+            class="rounded-xl"
+            src="./img/1.png"
+            alt="Image 4"
+          />
+          <div id="cursor" class="custom-cursor">Drag</div>
+        </div>
+      </section>
+
+      <section class="mt-50">
+        <div class="font-semibold text-[22px] text-center">Our Partners</div>
+        <div
+          class="flex items-center lg:gap-40.5 md:20 gap-15 justify-center mt-10 flex-wrap"
+        >
+          <img width="120" src="./img/cloud-edu.png" alt="Cloud Edu" />
+          <img width="120" src="./img/cmc.png" alt="CMC" />
+          <img width="120" src="./img/snp.png" alt="SNP" />
+          <img width="120" src="./img/zebec.png" alt="Zebec" />
+        </div>
+      </section>
+
+      <!-- Course Section -->
+      <section class="mt-50">
+        <h3 class="text-[24px]">
+          Explore our classes and master trending skills!
+        </h3>
+        <h3 class="text-[32px] font-extrabold mt-4">
+          Dive Into <span class="text-[#1DA077]">What’s Hot Right Now!🔥</span>
+        </h3>
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 mt-10"
+        >
+          <div class="bg-[#c33241] p-10 lg:col-span-2 rounded-3xl">
+            <div
+              class="text-[18px] text-white flex justify-end items-center gap-2 font-semibold"
+            >
+              View all Courses
+              <svg
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.34171 0.341709C7.79732 -0.113903 8.53601 -0.113903 8.99162 0.341709L13.6583 5.00838C14.1139 5.46399 14.1139 6.20268 13.6583 6.65829L8.99162 11.325C8.53601 11.7806 7.79732 11.7806 7.34171 11.325C6.8861 10.8693 6.8861 10.1307 7.34171 9.67504L10.0168 7L1.16667 7C0.522335 7 -2.81646e-08 6.47767 0 5.83333C2.81647e-08 5.189 0.522335 4.66667 1.16667 4.66667H10.0168L7.34171 1.99163C6.8861 1.53601 6.8861 0.797321 7.34171 0.341709Z"
+                  fill="#F9EBEC"
+                />
+              </svg>
+            </div>
+            <div
+              class="mt-10 flex justify-center items-center lg:gap-8 md:gap-5 gap-3 flex-wrap"
+            >
+              <img class="h-25 w-25" src="./img/react.png" alt="React" />
+              <img class="h-25 w-25" src="./img/emoji.png" alt="Emoji" />
+              <img class="h-25 w-25" src="./img/vue.png" alt="Vue" />
+              <img class="h-25 w-25" src="./img/tool.png" alt="Tool" />
+            </div>
+
+            <div class="flex justify-center items-center md:gap-5 gap-3">
+              <div class="flex text-[150px] text-white font-extrabold">
+                23
+                <span class="text-[60px] text-white font-extrabold">+</span>
+              </div>
+
+              <div class="text-[32px] font-bold text-white flex flex-col">
+                All Courses
+                <p class="mt-2 text-[18px] font-normal">
+                  courses you're powering through right now.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#f9ebec] rounded-3xl p-10">
+            <div class="flex gap-3 h-[260px] ml-10">
+              <h3
+                class="text-[#c33241] text-[32px] font-semibold leading-tight [writing-mode:vertical-rl] rotate-180"
+              >
+                Upcoming Courses
+              </h3>
+              <p
+                class="text-[#c33241] text-[18px] leading-tight [writing-mode:vertical-rl] rotate-180"
+              >
+                exciting new courses waiting to boost your skills.
+              </p>
+            </div>
+
+            <div
+              class="flex text-[150px] leading-none font-extrabold text-[#c33241] mt-6"
+            >
+              05
+              <span class="text-[60px] font-extrabold">+</span>
+            </div>
+          </div>
+          <div class="bg-[#f9ebec] rounded-3xl p-10">
+            <div class="flex gap-3 h-[260px] ml-10">
+              <h3
+                class="text-[#c33241] text-[32px] font-semibold leading-tight [writing-mode:vertical-rl] rotate-180"
+              >
+                Ongoing Courses
+              </h3>
+              <p
+                class="text-[#c33241] text-[18px] leading-tight [writing-mode:vertical-rl] rotate-180"
+              >
+                currently happening-don't miss out on the action!
+              </p>
+            </div>
+
+            <div
+              class="flex text-[150px] font-extrabold text-[#c33241] leading-none mt-6"
+            >
+              10
+              <span class="text-[60px] font-extrabold">+</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const container = document.querySelector(".img-container");
+      const cursor = document.querySelector(".custom-cursor");
+
+      container.addEventListener("mousemove", (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+
+    </script>
+  </body>
+</html>
